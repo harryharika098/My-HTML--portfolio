@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<style>
+
+body {
+    height: fit-content;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	MIN-height: 100vh;
+    BACKGROUND-SIZE:COVER;
+    background-position: CENTER;
+    BACKGROUND-IMAGE:URL(https://as1.ftcdn.net/v2/jpg/02/22/43/28/1000_F_222432863_YsNyvXwFgHBIlEB4UFPLu0xE4VkaLThj.jpg);
+}
+
+.container {
+	text-align: center;
+}
+
+.weather-card {
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+	width: 450px;
+}
+
+.weather-card:hover {
+	transform: scale(1.05);
+}
+
+#city-input {
+	padding: 15px;
+	margin: 10px 0;
+	width: 70%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#city-input:focus {
+	outline: none;
+	border-color: #2196F3;
+}
+
+#city-input::placeholder {
+	color: #aaa;
+}
+
+#city-input-btn {
+	padding: 10px;
+	background-color: #2196F3;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#city-input-btn:hover {
+	background-color: #1565C0;
+}
+
+#weather-info {
+	display:NONE;
+
+}
+
+#weather-icon {
+    HEIGHT:1PX;
+	width: 100px;
+	
+}
+
+#temperature {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 8px 0;
+}
+
+#description {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#wind-speed {
+	font-size: 16px;
+	color: NAVY;
+}
+
+#date {
+	font-size: 14px;
+	color: NAVY;
+}
+
+footer {
+    margin-top: 900px;
+
+
+}
+
+
+</style>
+
+<head>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>GFG App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: NAVY;">
+				WEATHER APP
+			</h1>
+			<h3>
+			</h3>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					SEARCH LOCATION
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+                <IMG ID="WEATHER-ICON" SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEOnCVlHIAk-DrMZLdUkXGYLmu5f9ILSipXPSz4hmO4g&s">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script.js"></script>
+    <FOOTER><b>BY Harry</FOOTER></b></FOOTER>
+</body>
+
+</html>

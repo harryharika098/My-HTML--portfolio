@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my porfolio website</title>
+    <style>
+body {
+    
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+* {
+    font-family:monospace;
+}
+
+
+ header {
+    FLEX-WRAP:WRAP;
+    height: 100vh;
+    display: flex;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .A {
+    text-decoration: none;
+ }
+ H1 {
+    COLOR:#2196f3;
+    FONT-SIZE:50PX;
+    MARGIN:15PX;
+  }
+
+header h1 {
+    color:white;
+}
+
+
+
+ button {
+    TRANSITION: BACKGROUND-COLOR EASE-OUT ;
+    TRANSITION:ALL 0.3S EASE-OUT ;
+    height:30px;
+    width:140px;
+    border:none;
+    border-radius:20px;
+    CURSOR:POINTER;
+ }
+
+ button:hover {
+    TRANSFORM:TRANSLATEY(-10PX);
+    COLOR:white;
+    BACKGROUND-COLOR:DARKBLUE;
+ }
+
+img { 
+    height:150PX;
+    width:200Px;
+}
+
+main {
+    display:flex;
+    flex-direction:center;
+    justify-content:center;
+    MARGIN:10PX;
+    BACKGROUND-COLOR:#f0f8ff;
+    HEIGHT:100VH;
+    BORDER:3PX SOLID GREY;
+    BORDER-RADIUS:10PX ;
+    PADDING:10PX
+}
+
+
+
+ section {
+
+    DISPLAY:FLEX;
+    FLEX-DIRECTION:COLUMN;
+    JUSTIFY-CONTENT:CENTER;
+    MARGIN:20PX;
+    HEIGHT:100VH;
+    BORDER:3PX SOLID GREY;
+    BORDER-RADIUS:20PX;
+    TEXT-ALIGN:CENTER;
+    BACKGROUND-COLOR:#f0f8ff;
+
+  }
+
+  article {
+
+    DISPLAY:FLEX;
+    FLEX-DIRECTION:COLUMN;
+    JUSTIFY-CONTENT:CENTER;
+    HEIGHT:100VH;
+    BORDER:3PX SOLID GREY;
+    BORDER-RADIUS:20PX;
+    TEXT-ALIGN:CENTER;
+    BACKGROUND-COLOR:#f0f8ff;
+  }
+
+  
+  .SUBMIT {
+    height:30px;
+    width:140px;
+    border:none;
+    border-radius:20px;
+    CURSOR:POINTER;
+      background-color:#2196f3 ;
+  }
+
+.SUBMIT:HOVER {
+    BACKGROUND-COLOR:#097cdb;
+}
+
+INPUT {
+    justify-content:center;
+    BORDER-RADIUS:10PX;
+    BORDER:4PX SOLID DARKGRAY;
+    HEIGHT:20PX;
+
+}
+
+INPUT:HOVER {
+    COLOR:BLACK;
+}
+
+ FOOTER {
+    display:flex;
+    flex-direction:center;
+    justify-content:center;
+    BACKGROUND-COLOR:BLACK;
+    COLOR:WHITE;
+    HEIGHT:300PX;
+    BORDER-RADIUS:40PX;
+ }
+    </style>
+</head>
+
+<header>
+<H1>Welcome To My Portfolio</H1>
+<div>
+    <div>
+    <a href="about">
+<button class="button">
+    about
+</button>
+</a>
+
+<a href="skills">
+<button class="button">
+    skills
+</button>
+</a>
+
+<a href="projects">
+<button class="button">
+    Projects
+</button>
+</a>
+
+<a href="contact">
+<button class="button">
+    contact
+</button>
+ </a>
+</div>
+</header>
+<main>
+<H1>MALIREDDY HARIKA</H1>
+</main>
+
+
+    <SECTION id="skills" >
+            <H1>MY SKILLS</H1>
+            <UL STYLE="TEXT-ALIGN:LEFT">
+                <LI>PYTHON</LI>
+                <LI>HTML</LI>
+                <LI>CSS</LI>
+                <LI>JAVASCRIPT</LI>
+            </UL>
+    </SECTION>
+
+
+ <section id="projects">
+    <h1>MY PROJECTS </h1>
+    <TABLE BORDER="2" CELLPADDING="3" CELLSPACING="1">
+        <TR>
+            <TH>PROJECT</TH>
+            <TH>DESCRIPTION</TH>
+        </TR>
+        <TR>
+            <TD>Portfolio Website</TD>
+            <td>I have built a Portfolio website by using HTML, CSS & JavaScript</td>
+        </TR>
+
+        <tr>
+            <td>Python Simple Calculator</td>
+            <td>I have built a simple calculator in the course by Code With Swaroop</td>
+        </tr>
+    </TABLE>
+</section>
+<section id="contact">
+    <h1>CONTACT ME </h1>
+    <P>PYTHON AND HTML AND JAVA SCRIP ARE IN THE YOUTUBE CHANNELS ALSO</P>
+
+
+
+
+
+<FORM ACTION="">
+
+    <DIV>
+    <LABLE FOR="NAME">NAME :</LABLE>
+    <INPUT TYPE="TEXT" id="name" required>
+      </DIV>
+<DIV><BR>
+            <LABLE FOR="EMAIL">EMAIL :</LABLE>
+            <INPUT TYPE="EMAIL" id="email" name="email" required>
+             </DIV>  
+    <DIV>
+                    <B>CHOOSE YOUR GENDER : </B>
+                    <INPUT TYPE="RADIO" ID="MALE"  name="gender" VALUE="MALE">
+                        <LABLE FOR="MALE">MALE</LABLE>
+                        <INPUT TYPE="RADIO" ID="FEMALE" name="gender"   VALUE="FEMALE">
+                            <LABLE FOR="FEMALE">FEMALE</LABLE>
+                            </DIV>
+                        
+                                <DIV>
+                                <B>SELECT YOUR INTREST :</B>
+                                <INPUT TYPE="CHECKBOX" ID="CODING" VALUE="CODE">
+                                    <LABLE FOR="CODING">CODING</LABLE>
+                                    <INPUT TYPE="CHECKBOX" ID="READING" VALUE="READING">
+                                        <LABLE FOR="READING">READING</LABLE>
+                                    </DIV>
+                                
+                                            <BR>
+                                            <DIV>
+                                            <LABLE FOR="BIO(UP TO 200 CHARACTERS) :">BIO UP TO 200 CHARACTERS :</LABLE>
+                                            <INPUT TYPE="TEXT" ID="TEXT">
+                                            </DIV>
+                                    <BR>
+                                                    <BUTTON TYPE="SUBMIT" CLASS="SUBMIT">SUBMIT</BUTTON>
+
+
+</FORM> 
+</section>
+</main>
+<a href="">
+<BUTTON>TOP</BUTTON>
+</a>
+<FOOTER>
+    <BR><BR>
+    <P>© 2023 My Portfolio</P>
+</FOOTER>
+
+
+</body>
+</html>
